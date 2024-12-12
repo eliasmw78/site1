@@ -1,0 +1,31 @@
+Lancé par un changement dans la base de code
+Exécution en tant que SYSTEM
+En cours de construction dans le répertoire de travail C:\ProgramData\Jenkins\.jenkins\workspace\site1
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/eliasmw78/site1.git
+ > git.exe init C:\ProgramData\Jenkins\.jenkins\workspace\site1 # timeout=10
+Fetching upstream changes from https://github.com/eliasmw78/site1.git
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.47.0.windows.2'
+ > git.exe fetch --tags --force --progress -- https://github.com/eliasmw78/site1.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe config remote.origin.url https://github.com/eliasmw78/site1.git # timeout=10
+ > git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+Checking out Revision fffa76be2cdd3ad8b3fbeec5e8427c858ca86d2b (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f fffa76be2cdd3ad8b3fbeec5e8427c858ca86d2b # timeout=10
+Commit message: "commit"
+First time build. Skipping changelog.
+[site1] $ cmd /c call C:\Windows\TEMP\jenkins6787967889900379118.bat
+
+C:\ProgramData\Jenkins\.jenkins\workspace\site1>xcopy /E /I /Y "C:\ProgramData\Jenkins\.jenkins\jobs\site1" "C:\xampp\htdocs\site1" 
+C:\ProgramData\Jenkins\.jenkins\jobs\site1\config.xml
+C:\ProgramData\Jenkins\.jenkins\jobs\site1\nextBuildNumber
+C:\ProgramData\Jenkins\.jenkins\jobs\site1\scm-polling.log
+C:\ProgramData\Jenkins\.jenkins\jobs\site1\builds\legacyIds
+C:\ProgramData\Jenkins\.jenkins\jobs\site1\builds\permalinks
+C:\ProgramData\Jenkins\.jenkins\jobs\site1\builds\1\changelog.xml
+C:\ProgramData\Jenkins\.jenkins\jobs\site1\builds\1\log
